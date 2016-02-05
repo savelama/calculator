@@ -7,10 +7,15 @@
 			$scope.input = '';
 			$scope.output = '0';
 
+			angular.element('button').bind('keypress', function (e) {
+				if (e.keyCode === 13 || e.keyCode === 32) {
+					e.preventDefault();
+				}
+			});
+
 			$scope.addInput = function (inputText) {
 				$scope.input = $scope.input + inputText;
 
-				// Blur button pressed to prevent space/enter from triggering a click
 				angular.element(':focus').blur();
 			};
 
