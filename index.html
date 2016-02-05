@@ -16,7 +16,7 @@
         <link href="css/bootstrap-theme.min.css" rel="stylesheet">
         <link href="css/site.css" rel="stylesheet">
     </head>
-    <body>
+    <body ng-keydown="checkKey($event)">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12" ng-cloak>
@@ -24,11 +24,13 @@
                         class="calc-input text-right"
                         value="{{ input }}"
                         readonly
+                        tabindex="-1"
                     />
                     <input
                         class="calc-output text-right"
                         value="{{ output }}"
                         readonly
+                        tabindex="-1"
                     />
                 </div>
             </div>
