@@ -15,7 +15,11 @@
 			};
 
 			$scope.backspace = function () {
-				$scope.input = $scope.input.trim().slice(0, -1).trim();
+				if ($scope.input.slice(-1) === ' ') {
+					$scope.input = $scope.input.slice(0, -3);
+				} else {
+					$scope.input = $scope.input.slice(0, -1);
+				}
 			};
 
 			$scope.calculateInput = function () {
