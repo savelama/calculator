@@ -1,0 +1,34 @@
+.container-fluid {
+    background-color: lightgray;
+    border: 3px solid black;
+    min-width: 320px;
+}
+
+.container-fluid .row {
+    padding-top: 15px;
+}
+
+.container-fluid .row:last-of-type {
+    padding-bottom: 15px;
+}
+
+input.calc-input {
+    width: 100%;
+    height: 3em;
+    border: none;
+    font-size: x-large;
+}
+
+input.calc-output {
+    width: 100%;
+    height: 2em;
+    font-size: xx-large;
+    font-weight: bold;
+    border: 0 solid #ddd;
+    border-top-width: 1px;
+}
+
+button.btn {
+    font-size: x-large;
+    font-weight: bold;
+}
